@@ -7,6 +7,10 @@
   <title>Ozzy Sip - Orange Prebiotic Soda</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -25,6 +29,9 @@
       color: white;
       padding: 1.5rem;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     header h1 {
@@ -104,6 +111,36 @@
       margin-bottom: 1rem;
     }
 
+    section {
+      scroll-margin-top: 100px;
+    }
+
+    .review-section, .faq-section {
+      padding: 2rem;
+      background: #fff;
+      border-radius: 15px;
+      margin: 2rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .review-section h2, .faq-section h2 {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .review {
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+
+    .faq {
+      margin-bottom: 1.5rem;
+    }
+
+    .faq h4 {
+      margin-bottom: 0.5rem;
+    }
+
     footer {
       background: #333;
       color: white;
@@ -124,11 +161,11 @@
     </nav>
   </header>
 
-  <section class="hero">
+  <section class="hero" id="about">
     <img src="ozzy sip.jpg" alt="Ozzy Sip Can">
     <h2>Perfect Refreshment - Just Rs. 99</h2>
     <p>Orange-flavored prebiotic soda packed with gut goodness and Gen-Z attitude. Refresh, revive, and rock on!</p>
-    <button class="cta-button">Shop Now</button>
+    <a href="https://forms.office.com/r/KKtMFSGRkU" target="_blank"><button class="cta-button">Shop Now</button></a>
   </section>
 
   <section class="features" id="benefits">
@@ -144,6 +181,35 @@
       <h3>Made for the Young</h3>
       <p>Trendy, bold, and designed with vibrant energy for the next-gen vibe.</p>
     </div>
+  </section>
+
+  <section class="review-section">
+    <h2>What Our Fans Say</h2>
+    <p class="review">"Ozzy Sip is a game-changer! My new favorite soda." – Riya, Mumbai</p>
+    <p class="review">"Feels great knowing it's good for my gut. And it tastes amazing!" – Arjun, Bengaluru</p>
+    <p class="review">"Finally a soda that looks as cool as it tastes!" – Tara, Delhi</p>
+  </section>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq">
+      <h4>Is Ozzy Sip actually healthy?</h4>
+      <p>Yes! It contains prebiotics that support gut health and is low in sugar.</p>
+    </div>
+    <div class="faq">
+      <h4>Where can I buy it?</h4>
+      <p>Right here on the site — click any "Buy Now" button to place your order via our form.</p>
+    </div>
+    <div class="faq">
+      <h4>Is it vegan and gluten-free?</h4>
+      <p>Absolutely! Ozzy Sip is 100% vegan and gluten-free.</p>
+    </div>
+  </section>
+
+  <section id="buy" style="text-align:center; padding: 2rem;">
+    <h2>Ready to Sip?</h2>
+    <p>Order Ozzy Sip now and taste the fizz that fuels the vibe!</p>
+    <a href="https://forms.office.com/r/KKtMFSGRkU" target="_blank"><button class="cta-button">Buy Now</button></a>
   </section>
 
   <footer>
