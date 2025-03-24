@@ -58,10 +58,29 @@
     }
 
     .hero {
+      position: relative;
       padding: 6rem 1rem;
       text-align: center;
       background: url('ozzy sip.jpg') center/cover no-repeat;
       color: white;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    .hero h2,
+    .hero p,
+    .hero a {
+      position: relative;
+      z-index: 2;
     }
 
     .hero h2 {
@@ -350,5 +369,8 @@
   <footer>
     <p>&copy; 2025 Ozzy Sip. All rights reserved.</p>
   </footer>
+
+  <!-- 🧠 AI Chatbot (Tidio) -->
+  <script src="//code.tidio.co/YOUR_UNIQUE_CHATBOT_ID.js" async></script>
 </body>
 </html>
