@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ozzy Sip - Orange Prebiotic Soda</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
@@ -158,6 +158,78 @@
       margin-top: 2rem;
     }
 
+    .extra-section {
+      padding: 2rem 1rem;
+      background: #fff;
+      border-radius: 15px;
+      max-width: 900px;
+      margin: 2rem auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .embed-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 15px;
+      margin-bottom: 1rem;
+    }
+
+    .embed-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 1.8rem;
+      margin-top: 1rem;
+    }
+
+    .social-icons a {
+      color: #ff6f61;
+      text-decoration: none;
+    }
+
+    .contact-form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.8rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    .sitemap ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sitemap ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .sitemap ul li a {
+      color: #ff6f61;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
     footer {
       background: #333;
       color: white;
@@ -229,9 +301,61 @@
     <a href="https://forms.office.com/r/KKtMFSGRkU" target="_blank"><button class="cta-button">Buy Now</button></a>
   </section>
 
+  <!-- YouTube Video -->
+  <section class="extra-section" id="learn">
+    <h2>Learn More About Prebiotic Drinks</h2>
+    <div class="embed-container">
+      <iframe src="https://www.youtube.com/embed/Er4a42tTgaE" title="Benefits of Prebiotic Drinks" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Google Maps -->
+  <section class="extra-section" id="location">
+    <h2>Find Us Here</h2>
+    <div class="embed-container">
+      <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_URL" title="Ozzy Sip Location" allowfullscreen></iframe>
+    </div>
+    <p style="margin-top:1rem;">(Replace the map link above with your actual store embed URL)</p>
+  </section>
+
+  <!-- Social Media -->
+  <section class="extra-section" id="social">
+    <h2>Connect With Us</h2>
+    <div class="social-icons">
+      <a href="https://instagram.com/" target="_blank" aria-label="Instagram">📸</a>
+      <a href="https://facebook.com/" target="_blank" aria-label="Facebook">📘</a>
+      <a href="https://twitter.com/" target="_blank" aria-label="Twitter">🐦</a>
+      <a href="mailto:hello@ozzysip.com" target="_blank" aria-label="Email">✉️</a>
+    </div>
+  </section>
+
+  <!-- Contact Us -->
+  <section class="extra-section" id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="cta-button">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Sitemap -->
+  <section class="extra-section sitemap" id="sitemap">
+    <h2>Site Map</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#buy">Buy Now</a></li>
+      <li><a href="#learn">Learn More</a></li>
+      <li><a href="#location">Find Us</a></li>
+      <li><a href="#social">Connect With Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </section>
+
   <footer>
     <p>&copy; 2025 Ozzy Sip. All rights reserved.</p>
   </footer>
 </body>
-
 </html>
